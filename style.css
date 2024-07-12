@@ -1,0 +1,121 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 5rem;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+ 
+.creative-text {
+  color: midnightblue;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.tile-image {
+  height: 200px;
+  margin-right: 50px;
+  float: left;
+}
+
+.card {
+  width: 45%;
+  animation: 3s alternate slideup;
+}
+
+@media (max-width: 1391px) {
+  .card {
+    display: inline;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+
+  .card img {
+    float: none;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+@media (max-width: 830px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3.05rem;
+  }
+
+  .card {
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .card img {
+    width: 100%;
+    object-fit: cover;
+    display: inline;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 492px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 100% 1;
+  }
+}
+
+to {
+  translate: 0 0;
+  scale: 100% 1;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(100vh);
+    scale: 100% 1;
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
